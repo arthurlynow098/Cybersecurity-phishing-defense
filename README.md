@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="assets/project-animal.png" alt="Emblema de Cybersecurity-phishing-defense" width="144" height="144">
+  <img src="assets/banner-v2.png" alt="Cybersecurity-phishing-defense" width="100%">
 </p>
-
-<h1 align="center">Cybersecurity-phishing-defense</h1>
 
 <p align="center">Laboratório acadêmico sobre engenharia social, análise de phishing e práticas de defesa.</p>
 

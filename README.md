@@ -1,37 +1,33 @@
 <p align="center">
-  <img src="assets/banner-v2.png" alt="Cybersecurity-phishing-defense" width="100%">
+  <img src="assets/identity/banner.png" alt="Cybersecurity-phishing-defense" width="100%">
 </p>
 
 <p align="center">Laboratório acadêmico sobre engenharia social, análise de phishing e práticas de defesa.</p>
 
-<p align="center"><img src="assets/docs/tags.svg" alt="Segurança · Phishing · Educação" width="100%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a></p>
 
----
+<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
 
 <a id="explore-o-projeto"></a>
 
-![Explore o projeto](assets/docs/section-01.svg)
+## Por onde começar
 
-![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
 
-<table width="100%">
-<tr><th align="left">Área</th><th align="left">O que você encontra</th><th align="left">Acesso direto</th></tr>
-<tr><td><strong>Página</strong></td><td>Interface do laboratório acadêmico.</td><td><a href="spotify/index.html">Abrir página →</a></td></tr>
-<tr><td><strong>Laboratório</strong></td><td>Arquivos para análise do fluxo simulado.</td><td><a href="spotify">Abrir laboratório →</a></td></tr>
-<tr><td><strong>Contexto</strong></td><td>Objetivo educacional e orientações do estudo.</td><td><a href="README.md">Abrir contexto →</a></td></tr>
-</table>
+- **[Página](spotify/index.html)** — Interface do laboratório acadêmico.
+- **[Laboratório](spotify)** — Arquivos para análise do fluxo simulado.
+- **[Contexto](README.md)** — Objetivo educacional e orientações do estudo.
+
 
 <a id="visão-geral"></a>
 
-![Visão geral](assets/docs/section-02.svg)
+## Visão geral
 
 A análise do código permite observar os indicadores clássicos que mecanismos de defesa e analistas de segurança procuram: domínios discrepantes, formulários que desviam o fluxo de autenticação para scripts intermediários (captura.php, password.php, codigo.php) e persistência indevida de entradas em banco de dados.
 
 <a id="recursos"></a>
 
-![Recursos](assets/docs/section-03.svg)
+## Recursos
 
 | Aspecto estudado | Análise técnica e defensiva |
 |---|---|
@@ -42,7 +38,7 @@ A análise do código permite observar os indicadores clássicos que mecanismos 
 
 <a id="tecnologias"></a>
 
-![Tecnologias](assets/docs/section-04.svg)
+## Tecnologias
 
 - **HTML5 e CSS3** na reprodução visual de tela de acesso para análise de fidelidade visual;
 - **PHP** na demonstração do encadeamento de requisições POST entre etapas;
@@ -70,7 +66,7 @@ Ao mapear cada etapa do funil, fica evidente por que a autenticação multifator
 ```text
 Cybersecurity-phishing-defense/
 ├── assets/
-│   └── banner-v2.png               Banner do projeto
+│   └── identity/banner.png               Banner do projeto
 ├── spotify/
 │   ├── index.html                  Interface inicial de estudo
 │   ├── captura.php                 Primeira etapa do fluxo simulado
@@ -85,7 +81,7 @@ Cybersecurity-phishing-defense/
 
 <a id="como-explorar-com-segurança"></a>
 
-![Como explorar com segurança](assets/docs/section-05.svg)
+## Como explorar com segurança
 
 1. Clone o repositório apenas em uma máquina virtual ou ambiente local isolado (localhost):
    ```bash
@@ -96,12 +92,12 @@ Cybersecurity-phishing-defense/
 
 <a id="decisões-técnicas-e-lições-de-defesa"></a>
 
-![Decisões técnicas e lições de defesa](assets/docs/section-06.svg)
+## Decisões técnicas e lições de defesa
 
 - **Por que o gerenciador de senhas protege:** gerenciadores verificam o domínio real da página antes de preencher credenciais, neutralizando clones visuais hospedados em outros endereços.
 - **Limitações de 2FA por código digitado:** o fluxo codigo.php demonstra como ataques *Reverse Proxy / AiTM* ou coleta em tempo real tentam capturar códigos OTP manuais, reforçando a importância de chaves de segurança vinculadas ao domínio.
 
----
+<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
 
 <p align="center">
   <a href="https://github.com/arthurlynow098">GitHub</a> &nbsp;·&nbsp;

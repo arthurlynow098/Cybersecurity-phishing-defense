@@ -4,21 +4,33 @@
 
 <p align="center">Laboratório acadêmico sobre engenharia social, análise de phishing e práticas de defesa.</p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Seguran%C3%A7a-C52E36?style=flat-square" alt="Segurança">
-  <img src="https://img.shields.io/badge/Phishing-24272E?style=flat-square" alt="Phishing">
-  <img src="https://img.shields.io/badge/Educa%C3%A7%C3%A3o-24272E?style=flat-square" alt="Educação">
-</p>
+<p align="center"><img src="assets/docs/tags.svg" alt="Segurança · Phishing · Educação" width="72%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a></p>
 
 ---
 
-## Visão geral
+<a id="explore-o-projeto"></a>
+
+![Explore o projeto](assets/docs/section-01.svg)
+
+![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
+
+| Área | O que você encontra | Acesso direto |
+|---|---|---|
+| **Página** | Interface do laboratório acadêmico. | [Abrir página →](spotify/index.html) |
+| **Laboratório** | Arquivos para análise do fluxo simulado. | [Abrir laboratório →](spotify) |
+| **Contexto** | Objetivo educacional e orientações do estudo. | [Abrir contexto →](README.md) |
+
+<a id="visão-geral"></a>
+
+![Visão geral](assets/docs/section-02.svg)
 
 A análise do código permite observar os indicadores clássicos que mecanismos de defesa e analistas de segurança procuram: domínios discrepantes, formulários que desviam o fluxo de autenticação para scripts intermediários (captura.php, password.php, codigo.php) e persistência indevida de entradas em banco de dados.
 
-## Recursos
+<a id="recursos"></a>
+
+![Recursos](assets/docs/section-03.svg)
 
 | Aspecto estudado | Análise técnica e defensiva |
 |---|---|
@@ -27,7 +39,9 @@ A análise do código permite observar os indicadores clássicos que mecanismos 
 | Persistência em laboratório | O arquivo db_config.php ilustra como atacantes armazenam dados capturados em ambientes improvisados. |
 | Indicadores de comprometimento (IoCs) | Serve como base para treinar a verificação de certificados TLS, URLs, cabeçalhos HTTP e gerenciadores de senhas. |
 
-## Tecnologias
+<a id="tecnologias"></a>
+
+![Tecnologias](assets/docs/section-04.svg)
 
 - **HTML5 e CSS3** na reprodução visual de tela de acesso para análise de fidelidade visual;
 - **PHP** na demonstração do encadeamento de requisições POST entre etapas;
@@ -55,7 +69,7 @@ Ao mapear cada etapa do funil, fica evidente por que a autenticação multifator
 ```text
 Cybersecurity-phishing-defense/
 ├── assets/
-│   └── project-animal.png          Emblema do projeto
+│   └── banner-v2.png               Banner do projeto
 ├── spotify/
 │   ├── index.html                  Interface inicial de estudo
 │   ├── captura.php                 Primeira etapa do fluxo simulado
@@ -68,7 +82,9 @@ Cybersecurity-phishing-defense/
 
 </details>
 
-## Como explorar com segurança
+<a id="como-explorar-com-segurança"></a>
+
+![Como explorar com segurança](assets/docs/section-05.svg)
 
 1. Clone o repositório apenas em uma máquina virtual ou ambiente local isolado (localhost):
    ```bash
@@ -77,7 +93,9 @@ Cybersecurity-phishing-defense/
 2. Inspecione os arquivos .html e .php em um editor de código para analisar os vetores de redirecionamento e captura.
 3. Caso execute em servidor local para demonstração acadêmica, utilize **exclusivamente dados fictícios**.
 
-## Decisões técnicas e lições de defesa
+<a id="decisões-técnicas-e-lições-de-defesa"></a>
+
+![Decisões técnicas e lições de defesa](assets/docs/section-06.svg)
 
 - **Por que o gerenciador de senhas protege:** gerenciadores verificam o domínio real da página antes de preencher credenciais, neutralizando clones visuais hospedados em outros endereços.
 - **Limitações de 2FA por código digitado:** o fluxo codigo.php demonstra como ataques *Reverse Proxy / AiTM* ou coleta em tempo real tentam capturar códigos OTP manuais, reforçando a importância de chaves de segurança vinculadas ao domínio.

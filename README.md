@@ -4,7 +4,7 @@
 
 <p align="center">Laboratório acadêmico sobre engenharia social, análise de phishing e práticas de defesa.</p>
 
-<p align="center"><img src="assets/docs/tags.svg" alt="Segurança · Phishing · Educação" width="72%"></p>
+<p align="center"><img src="assets/docs/tags.svg" alt="Segurança · Phishing · Educação" width="100%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a></p>
 
@@ -16,11 +16,12 @@
 
 ![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
 
-| Área | O que você encontra | Acesso direto |
-|---|---|---|
-| **Página** | Interface do laboratório acadêmico. | [Abrir página →](spotify/index.html) |
-| **Laboratório** | Arquivos para análise do fluxo simulado. | [Abrir laboratório →](spotify) |
-| **Contexto** | Objetivo educacional e orientações do estudo. | [Abrir contexto →](README.md) |
+<table width="100%">
+<tr><th align="left">Área</th><th align="left">O que você encontra</th><th align="left">Acesso direto</th></tr>
+<tr><td><strong>Página</strong></td><td>Interface do laboratório acadêmico.</td><td><a href="spotify/index.html">Abrir página →</a></td></tr>
+<tr><td><strong>Laboratório</strong></td><td>Arquivos para análise do fluxo simulado.</td><td><a href="spotify">Abrir laboratório →</a></td></tr>
+<tr><td><strong>Contexto</strong></td><td>Objetivo educacional e orientações do estudo.</td><td><a href="README.md">Abrir contexto →</a></td></tr>
+</table>
 
 <a id="visão-geral"></a>
 
